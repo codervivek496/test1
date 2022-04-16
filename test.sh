@@ -11,12 +11,12 @@ case $choice in
         echo $subtraction;;
 	3)
         read -p "enter two numbers" a b
-        multiplication=`expr$a * $b`
-        echo $addition;;
+        multiplication=$(( $a * $b ))
+        echo $multiplication;;
 	4)
         read -p "enter two numbers" a b
-        division=`expr$a / $b`
-        echo $addition;;
+        division=$(( $a / $b ))
+        echo $division;;
 	*)
 	echo default;;
 esac
